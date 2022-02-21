@@ -77,7 +77,7 @@ app.get("/",async (req,res)=>{
     </head>
     <body>
     
-    <h1 >User Informations</h1>
+    <h1 >User Information</h1>
     <br><br><br><br>
     
     <table id="customers">
