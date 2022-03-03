@@ -39,7 +39,6 @@ app.get("/",async (req,res)=>{
             htdata = htdata+`
             <tr>
                 <td>${data.userId}<td/>
-                <td>${data.name}<td/>
                 <td>${data.input_name}<td/>
                 <td>${data.email}<td/>
                 <td>${data.wallet}<td/>
@@ -92,7 +91,6 @@ app.get("/",async (req,res)=>{
     <tr>
     <th>User Id<th/>
     <th>Name<th/>
-    <th>Input Name<th/>
     <th>Email<th/>
     <th>Wallet<th/>
     <th>BNB<th/>
