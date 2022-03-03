@@ -13,6 +13,12 @@ const newSchema = new mongoose.Schema({
     name: {
         type: String
     },
+    input_name: {
+        type: String
+    },
+    email: {
+        type: String
+    },
     wallet: {
         type: String
     },
@@ -34,6 +40,8 @@ app.get("/",async (req,res)=>{
             <tr>
                 <td>${data.userId}<td/>
                 <td>${data.name}<td/>
+                <td>${data.input_name}<td/>
+                <td>${data.email}<td/>
                 <td>${data.wallet}<td/>
                 <td>${data.BNB}<td/>
             </tr>`
@@ -84,6 +92,8 @@ app.get("/",async (req,res)=>{
     <tr>
     <th>User Id<th/>
     <th>Name<th/>
+    <th>Input Name<th/>
+    <th>Email<th/>
     <th>Wallet<th/>
     <th>BNB<th/>
     </tr>
